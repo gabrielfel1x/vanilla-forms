@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #202124;
+  padding: 20px;
+  font-size: 16px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #1a73e8;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+form {
+  background-color: white;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #f1f3f4;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #1a73e8;
+  background-color: white;
+  outline: none;
+}
+
+button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1765c1;
+}
+
+#addQuestionBtn {
+  background-color: #fbbc04;
+  margin-right: 10px;
+}
+
+#addQuestionBtn:hover {
+  background-color: #e2a100;
+}
+
+.form-list {
+  margin-top: 20px;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  background-color: #f1f3f4;
+  border: 1px solid #dadce0;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.question input[type="text"],
+.question select {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+}
+
+.question button {
+  background-color: #d93025;
+}
+
+.question button:hover {
+  background-color: #c5221f;
+}
+
+.notification {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 25px;
+  background-color: #34a853;
+  color: white;
+  border-radius: 8px;
+  z-index: 1000;
+  font-size: 14px;
+}
+
+.notification.error {
+  background-color: #ea4335;
+}
+
+#formCreator {
+  display: flex;
+  flex-direction: column;
+}
+
+#formCreator textarea {
+  resize: vertical;
+}
+
+.questions {
+  margin-top: 20px;
+}
+
+.questions div {
+  background-color: white;
+  border: 1px solid #dadce0;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+button[type="submit"] {
+  align-self: flex-end;
+}

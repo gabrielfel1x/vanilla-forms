@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Vanilla Forms</h1>
+        <button id="loadFormsBtn">Load Forms</button>
+    </header>
+    <main>
+        <form id="formCreator">
+            <input type="text" id="formTitle" placeholder="Form Title (max 200 chars)" required maxlength="200">
+            <textarea id="formDescription" placeholder="Form Description" required></textarea>
+            <div id="questionsContainer"></div>
+            <button type="button" id="addQuestionBtn">Add Question</button>
+            <button type="submit">Submit Form</button>
+        </form>
+        <div id="formList" class="form-list"></div>
+    </main>
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
